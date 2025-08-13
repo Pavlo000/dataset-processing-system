@@ -236,6 +236,27 @@ List<Employee> over30 = employees.stream()
 | "Out of memory" | Dataset too large | Reduce dataset size |
 
 
+## Screenshots
+
+The application in action:
+
+![Main Window](screenshots/01-main-window.jpg)
+*Main application window with three main action buttons*
+
+![Dataset Generation](screenshots/02-generate-dataset.jpg)
+*Generating a large dataset with 45,000 employee records*
+
+![File Upload](screenshots/03-upload-dialog.jpg)
+*Native file chooser for uploading custom datasets*
+
+![Processing Results](screenshots/04-processing-results.jpg)
+*Comprehensive data analysis using Function interfaces and Streams*
+
+![Error Handling](screenshots/05-error-handling.jpg)
+*User-friendly error messages with helpful JSON structure examples*
+
+*Note: Screenshots show the application processing 45,000+ employee records with real-time analysis using Java Streams and Function interfaces.*
+
 ## Learning Objectives
 
 This project demonstrates:

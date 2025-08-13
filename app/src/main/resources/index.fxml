@@ -31,7 +31,7 @@
               <Insets top="15" right="15" bottom="15" left="15" />
           </padding>
           <Label text="Dataset Processing Results:" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
-          <TextArea fx:id="outputArea" editable="false" prefRowCount="30" prefColumnCount="100" 
+          <TextArea fx:id="outputArea" editable="false" prefRowCount="40" prefColumnCount="100" 
                     style="-fx-font-family: 'Monaco', 'Consolas', monospace; -fx-font-size: 12px;" />
       </VBox>
   </center>
