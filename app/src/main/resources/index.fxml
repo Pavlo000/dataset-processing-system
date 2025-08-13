@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane
+  xmlns="http://javafx.com/javafx/24"
+  xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="app.AppController"
+  prefWidth="1200"
+  prefHeight="800"
+>
+  <top>
+      <VBox spacing="10">
+          <padding>
+              <Insets top="15" right="15" bottom="15" left="15" />
+          </padding>
+          <Label text="Dataset Processing System" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+          <HBox spacing="10">
+              <Button text="Generate Random Dataset" onAction="#generateRandomDataset" style="-fx-font-size: 14px;" />
+              <Button text="Upload Custom Dataset" onAction="#uploadCustomDataset" style="-fx-font-size: 14px;" />
+              <Button text="Process Dataset" onAction="#processDataset" style="-fx-font-size: 14px;" />
+          </HBox>
+          <Label fx:id="statusLabel" text="Ready to process datasets" style="-fx-font-size: 12px; -fx-text-fill: gray;" />
+      </VBox>
+  </top>
+  
+  <center>
+      <VBox spacing="10">
+          <padding>
+              <Insets top="15" right="15" bottom="15" left="15" />
+          </padding>
+          <Label text="Dataset Processing Results:" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+          <TextArea fx:id="outputArea" editable="false" prefRowCount="30" prefColumnCount="100" 
+                    style="-fx-font-family: 'Monaco', 'Consolas', monospace; -fx-font-size: 12px;" />
+      </VBox>
+  </center>
+</BorderPane>
