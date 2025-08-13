@@ -7,10 +7,6 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-/**
- * Main class demonstrating the usage of Function interface and Streams
- * for processing employee data in a company dataset
- */
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {

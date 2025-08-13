@@ -8,7 +8,7 @@ import com.google.gson.GsonBuilder;
 public class Dataset {
     
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    
+
     public static void generateDataset() {
         try {
             List<Employee> employees = generateLargeDataset();
@@ -26,11 +26,6 @@ public class Dataset {
         } catch (Exception e) {
             System.err.println("Error generating dataset: " + e.getMessage());
         }
-    }
-
-    private static void overrideDataset() {
-        // This method can be used to override existing dataset
-        generateDataset();
     }
     
     private static List<Employee> generateLargeDataset() {
